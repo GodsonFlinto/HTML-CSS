@@ -1,0 +1,151 @@
+:root{
+    --red:#dc0f0f;
+    --green:#259019;
+    --white:#ffff;
+    --lgreen:#abaf35;
+}
+
+body, h3{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.landing{
+    background-image: url(./food.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--white);
+}
+header{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+header a{
+    text-decoration: none;
+    color: var(--white);
+    min-width: 120px;
+}
+#logo{
+    color: var(--white);
+    flex: 5;
+    font-size: 2em;
+    text-align: center;
+    padding-left: 10em;
+    font-style: italic;
+    font-weight: bold;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    font-size: 1.2em;
+    flex: auto;
+    padding-top: 8px;
+}
+nav a:hover{
+    color: var(--green);
+}
+
+header a i, nav a i{
+    margin-right: .5em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    align-items: end;
+    padding: 3em;
+}
+.tagline1{
+    font-size: 2.5em;
+    color: var(--white);
+}
+.tagline2{
+    font-size: 1.5em;
+    color: var(--red);
+    font-style: italic;
+}
+.call{
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+.content div{
+    margin-top: 10px;
+}
+button{
+    padding: .5em 2em;
+    margin-top: 15px;
+    margin-right: 25px;
+    border-radius: 50px;
+    font-size: 1em;
+    color: var(--white);
+    background-color: var(--red);
+}
+button:hover{
+    background-color: var(--green);
+}
+#menu, #locat{
+    font-size: 2em;
+    color: var(--white);
+    background: linear-gradient(to right, rgba(108, 101, 101, 0.703), rgb(39, 21, 21));
+    display: flex;
+    justify-content: center;
+}
+.menulist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    background-color: #c9c9c8;
+}
+.menulist th{
+    font-size: 1.5em;
+    color: var(--red);
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menulist tr{
+    display: flex;
+    justify-content: center;
+    padding: .4em;
+    margin-top: .7em;
+}
+.menulist td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menulist td:nth-child(2){
+    justify-self: right;
+}
+.maindish{
+    grid-row: span 2;
+}
+.locations{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    background-color: #352a2a;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: var(--red);
+    
+}
+.locations div{
+    flex:1;
+    padding: 1em;
+    min-width: 220px;
+    text-align: center;
+}
+footer{
+    background-color: #ffffff;
+    color: #352a2a;
+    padding: .25em 1em;
+    text-align: center;
+}
